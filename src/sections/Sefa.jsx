@@ -1,27 +1,24 @@
 // src/sections/Hero.jsx
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const Hero = () => {
+const Sefa = () => {
   return (
-    <section className="min-h-screen bg-black text-white flex items-center justify-center">
-      <div className="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
+    <section className="min-h-screen flex items-center justify-center px-6 py-16">
+      <div className="container mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Texte à gauche */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Sefa Tas</h1>
-          <h2 className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">
-            Développeur Full Stack
-          </h2>
+          <h2 className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">Développeur Full Stack</h2>
           <p className="text-gray-300 mb-6 max-w-md mx-auto md:mx-0">
-            Lorem ipsum dolor sit amet consectetur. Passionné de code, curieux
-            et rigoureux.
+            Passionné de code, rigoureux et toujours en quête de nouveaux défis.
           </p>
           <div className="flex items-center justify-center md:justify-start gap-4">
             <a
               href="/assets/CV_SefaTas.pdf"
+              className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition"
             >
               Télécharger CV
             </a>
@@ -57,4 +54,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Sefa;
