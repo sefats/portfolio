@@ -1,55 +1,84 @@
-// src/sections/Hero.jsx
-import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import React, { useEffect, useState } from "react";
+import AnimatedText from "../components/AnimatedText";
+import { motion } from "framer-motion";
+import ParticlesBackground from "../components/ParticlesBackground";
+import { AnimatedBackground } from "animated-backgrounds";
 
 const Sefa = () => {
+  const [showScrollIndicator, setShowScrollIndicator] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollIndicator(window.scrollY < 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-16">
-      <div className="container mx-auto flex flex-col md:flex-row items-center gap-10">
-        {/* Texte à gauche */}
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Sefa Tas</h1>
-          <h2 className="text-xl md:text-2xl text-blue-400 font-semibold mb-6">Développeur Full Stack</h2>
-          <p className="text-gray-300 mb-6 max-w-md mx-auto md:mx-0">
-            Passionné de code, rigoureux et toujours en quête de nouveaux défis.
-          </p>
-          <div className="flex items-center justify-center md:justify-start gap-4">
+    <section
+      id="home"
+      className="relative min-h-screen text-black flex items-center justify-center px-[5%] py-24 overflow-hidden"
+    >
+      <AnimatedBackground animationName="geometricShapes" blendMode="screen" />
+
+      {/* 🧑‍💻 Contenu principal */}
+      <div className="relative z-10 w-full max-w-7xl flex flex-col md:flex-row items-center gap-24">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex-1 md:pr-10 text-center md:text-left"
+        >
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Sefa TAS</h1>
+          <h2 className="text-xl md:text-2xl mb-8">
+            <AnimatedText />
+          </h2>
+          <div className="flex flex-wrap justify-center md:justify-start gap-6">
             <a
-              href="/assets/CV_SefaTas.pdf"
-              className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition"
+              href="src/assets/TAS_Sefa_CV.pdf"
+              className="bg-black text-white font-semibold text-lg px-8 py-3 rounded-full hover:bg-gray-800 transition"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Télécharger CV
+              Télécharger mon CV
             </a>
             <a
-              href="https://github.com/tonpseudo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white text-2xl hover:text-blue-400"
+              href="#contact"
+              className="border border-black text-lg px-8 py-3 rounded-full hover:bg-black hover:text-white transition"
             >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/tonprofil"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white text-2xl hover:text-blue-400"
-            >
-              <FaLinkedin />
+              Me contacter
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Image à droite */}
-        <div className="flex-1 flex justify-center">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex-1 flex justify-center"
+        >
           <img
-            src="/assets/pp.jpg"
+            src="src/assets/pp2.jpg"
             alt="Sefa Tas"
-            className="w-64 h-64 object-cover rounded-xl shadow-lg border-4 border-white"
+            className="w-[350px] h-[350px] md:w-[420px] md:h-[420px] object-cover rounded-xl shadow-lg border-4 border-black"
           />
-        </div>
+        </motion.div>
       </div>
+
+      {/* ⬇️ Indicateur scroll */}
+      {showScrollIndicator && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="absolute bottom-6 left-1/2 transform -translate-x-1/2"
+        >
+          <div className="w-7 h-7 border-b-2 border-r-2 border-black rotate-45 animate-bounce" />
+        </motion.div>
+      )}
     </section>
   );
 };
