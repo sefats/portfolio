@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Tippy from "@tippyjs/react";
-import 'tippy.js/dist/tippy.css';
+import "tippy.js/dist/tippy.css";
 
 // Logos entreprises
 import forviaLogo from "../assets/FORVIA.svg.png";
@@ -86,29 +86,58 @@ const Parcours = () => {
                   {/* Expérience Sevilog */}
                   <motion.div className="bg-[#dcecff] p-8 rounded-2xl shadow-md relative">
                     <div className="absolute -left-[14px] top-6 w-5 h-5 bg-white border-2 border-[#3B80C3] rounded-full" />
-                    <img src={sevilogLogo} alt="Sevilog" className="absolute right-6 top-6 w-[60px]" />
-                    <p className="text-base text-gray-600 mb-1">Janvier – Avril 2025</p>
-                    <h3 className="font-bold text-2xl text-[#1e63a4]">Stage : Développement d’Application</h3>
-                    <p className="text-base font-medium">Sevilog, Mundolsheim</p>
+                    <img
+                      src={sevilogLogo}
+                      alt="Sevilog"
+                      className="absolute right-6 top-6 w-[60px]"
+                    />
+                    <p className="text-base text-gray-600 mb-1">
+                      Janvier – Avril 2025
+                    </p>
+                    <h3 className="font-bold text-2xl text-[#1e63a4]">
+                      Stage : Développement d’Application
+                    </h3>
+                    <p className="text-base font-medium">
+                      Sevilog, Mundolsheim
+                    </p>
                     <p className="text-base mt-2 leading-relaxed">
-                      Développement et amélioration de l’application "Taxe au sucre" sous Symfony...
+                      Développement et amélioration de l’application “Taxe au
+                      sucre” en Symfony. Ajout de fonctionnalités pour les
+                      administrateurs, optimisation du processus d’ajout et
+                      modification des produits, amélioration du backend et mise
+                      en place de la génération de PDF pour la déclaration de la
+                      taxe au sucre.
                     </p>
                     {techIcons([
                       { src: symfonyLogo, name: "Symfony" },
                       { src: phpLogo, name: "PHP" },
-                      {src: mysqlLogo , name: "MySQL"}
+                      { src: mysqlLogo, name: "MySQL" },
                     ])}
                   </motion.div>
 
                   {/* Expérience Forvia */}
                   <motion.div className="bg-[#dcecff] p-8 rounded-2xl shadow-md relative">
                     <div className="absolute -left-[14px] top-6 w-5 h-5 bg-white border-2 border-[#3B80C3] rounded-full" />
-                    <img src={forviaLogo} alt="Forvia" className="absolute right-6 top-6 w-[60px]" />
-                    <p className="text-base text-gray-600 mb-1">Avril – Juin 2024</p>
-                    <h3 className="font-bold text-2xl text-[#1e63a4]">Stage : Développement d’Application</h3>
+                    <img
+                      src={forviaLogo}
+                      alt="Forvia"
+                      className="absolute right-6 top-6 w-[60px]"
+                    />
+                    <p className="text-base text-gray-600 mb-1">
+                      Avril – Juin 2024
+                    </p>
+                    <h3 className="font-bold text-2xl text-[#1e63a4]">
+                      Stage : Développements d’Applications
+                    </h3>
                     <p className="text-base font-medium">Forvia, Allenjoie</p>
                     <p className="text-base mt-2 leading-relaxed">
-                      Amélioration d’un site de gestion d’alertes de composants, intégration LDAP...
+                      Amélioration, correction et ajout de nouvelles
+                      fonctionnalités sur un site web gérant les alertes de
+                      composants. Implémentation d'un système d'envoi de mails
+                      et de SMS. Création d’un site web qui permet d'enregistrer
+                      les personnes entrant dans l'entreprise via l'outil LDAP.
+                      Ce registre offre également des statistiques journalières
+                      et mensuelles
                     </p>
                     {techIcons([
                       { src: vuejsLogo, name: "VueJS" },

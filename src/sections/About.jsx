@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import githubLogo from "../assets/logos/GitHub.svg"; // Ton logo GitHub
+import linkedinLogo from "../assets/logos/LinkedIn.svg";
 
 const About = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("sefatas.contact@gmail.com").then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // message visible 2s
+    });
+  };
+
   return (
     <section id="about" className="bg-white py-32 px-[5%] animate-fade-in">
       <div className="max-w-7xl mx-auto">
@@ -26,43 +37,60 @@ const About = () => {
           {/* Texte & contact */}
           <div className="flex-1 text-center md:text-left">
             <p className="text-gray-800 text-xl leading-relaxed mb-8">
-              Salut ! Je m'appelle Sefa TAS, actuellement en 3e année d'un BUT
+              Salut ! Je m'appelle Sefa TAS, actuellement en 3e année de BUT
               Informatique à l’IUT Nord Franche-Comté. Passionné par le
               développement web et la création de logiciels, je m’épanouis dans
               des projets où je peux concevoir, coder et résoudre des problèmes
               concrets. Mes domaines de prédilection ? Le développement
               d'applications web et logicielles, la gestion de bases de données
-              et un intérêt pour l’administration réseau. En
-              dehors de l’informatique, je suis un grand amateur de cinéma. 
-              J'aime également voyager et le sport en général. Je suis aussi
-              passionné de football et j’adore jouer aux échecs.
+              et un grand intérêt pour l’administration systèmes et réseaux. 
+              En dehors de l’informatique, j'aime passer mon temps libre à regarder des films et des séries.
+              J'aime également voyager, jouer aux jeux vidéos et le sport en général, particulièrement le football et les échecs.
+
             </p>
 
-            {/* Email encadré */}
-            <div className="bg-[#d0e6f9] text-left text-base md:text-lg text-gray-800 rounded-lg px-5 py-3 inline-block mb-6">
+            {/* Email cliquable + copiable */}
+            <div
+              onClick={handleCopyEmail}
+              className="cursor-pointer bg-[#d0e6f9] hover:bg-[#bddaf3] transition-colors duration-200 text-left text-base md:text-lg text-gray-800 rounded-lg px-5 py-3 inline-block mb-6 relative group"
+              title="Cliquez pour copier l’e-mail"
+            >
               <span className="block font-semibold text-gray-600 mb-1">
                 Email
               </span>
               sefatas.contact@gmail.com
+              {/* Message "Copié !" */}
+              {copied && (
+                <span className="absolute top-0 right-0 bg-[#3B80C3] text-white text-xs px-2 py-1 rounded-bl-lg shadow-md">
+                  Copié !
+                </span>
+              )}
             </div>
 
-            {/* Réseaux sociaux */}
-            <div className="flex gap-6 justify-center md:justify-start text-3xl text-[#3B80C3]">
+            {/* Réseaux sociaux avec logos image */}
+            <div className="flex gap-6 justify-center md:justify-start text-3xl">
               <a
                 href="https://www.linkedin.com/in/sefa-alperen-tas-9aa976290/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform"
+                className="group relative hover:scale-110 transition-transform"
               >
-                <FaLinkedin />
+                <img src={linkedinLogo} alt="LinkedIn" className="w-8 h-8" />
+                <span className="absolute bottom-[-1.8rem] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  LinkedIn
+                </span>
               </a>
+
               <a
                 href="https://github.com/sefats"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform"
+                className="group relative hover:scale-110 transition-transform"
               >
-                <FaGithub />
+                <img src={githubLogo} alt="GitHub" className="w-8 h-8" />
+                <span className="absolute bottom-[-1.8rem] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  GitHub
+                </span>
               </a>
             </div>
           </div>
