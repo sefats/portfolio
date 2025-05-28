@@ -91,7 +91,9 @@ const Skills = () => {
                       title={item.name}
                       className="w-14 h-14 transition-transform duration-300 hover:scale-125"
                     />
-                    <span className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
+                    <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-[#1f1f1f] 
+                    text-white text-sm font-medium rounded-md py-1.5 px-3 opacity-0 group-hover:opacity-100 
+                    translate-y-1 group-hover:translate-y-0 transition-all duration-200 shadow-lg z-10">
                       {item.name}
                     </span>
                   </div>

@@ -8,8 +8,7 @@ import "tippy.js/dist/tippy.css";
 import forviaLogo from "../assets/FORVIA.svg.png";
 import sevilogLogo from "../assets/sevilog.png";
 
-// Logos technologies (ajuste selon ton organisation)
-import reactLogo from "../assets/logos/React.svg";
+// Logos technologies
 import symfonyLogo from "../assets/logos/Symfony.svg";
 import phpLogo from "../assets/logos/Php.svg";
 import mysqlLogo from "../assets/logos/MySQL.svg";
@@ -86,7 +85,9 @@ const Parcours = () => {
               >
                 <div className="space-y-10 border-l-4 border-[#3B80C3] pl-8">
                   {/* Expérience Sevilog */}
-                  <motion.div className="bg-[#dcecff] p-8 rounded-2xl shadow-md relative">
+                  <motion.div
+                    className="bg-[#dcecff] p-8 rounded-2xl shadow-md relative hover:shadow-xl hover:scale-[1.02] transition duration-300"
+                  >
                     <div className="absolute -left-[14px] top-6 w-5 h-5 bg-white border-2 border-[#3B80C3] rounded-full" />
                     <img
                       src={sevilogLogo}
@@ -108,8 +109,7 @@ const Parcours = () => {
                       administrateurs, optimisation du processus d’ajout et
                       modification des produits, amélioration du backend et mise
                       en place de la génération de PDF pour la déclaration de la
-                      taxe au sucre.
-                    </p>
+                      taxe au sucre.                    </p>
                     {techIcons([
                       { src: symfonyLogo, name: "Symfony" },
                       { src: phpLogo, name: "PHP" },
@@ -118,7 +118,9 @@ const Parcours = () => {
                   </motion.div>
 
                   {/* Expérience Forvia */}
-                  <motion.div className="bg-[#dcecff] p-8 rounded-2xl shadow-md relative">
+                  <motion.div
+                    className="bg-[#dcecff] p-8 rounded-2xl shadow-md relative hover:shadow-xl hover:scale-[1.02] transition duration-300"
+                  >
                     <div className="absolute -left-[14px] top-6 w-5 h-5 bg-white border-2 border-[#3B80C3] rounded-full" />
                     <img
                       src={forviaLogo}
@@ -139,8 +141,7 @@ const Parcours = () => {
                       et de SMS. Création d’un site web qui permet d'enregistrer
                       les personnes entrant dans l'entreprise via l'outil LDAP.
                       Ce registre offre également des statistiques journalières
-                      et mensuelles
-                    </p>
+                      et mensuelles                    </p>
                     {techIcons([
                       { src: vuejsLogo, name: "VueJS" },
                       { src: nodejsLogo, name: "NodeJS" },

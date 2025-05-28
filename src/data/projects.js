@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "MovieZone",
+    title: "Taxe-Sucre",
     image: "/src/assets/projects/moviezone.png",
     description:
       "MovieZone est une application de catalogue de films avec des notes, des critiques et des bandes-annonces.",
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "MyTasks",
+    title: "Cahier des Registre - Forvia",
     image: "/src/assets/projects/mytasks.png",
     description:
       "Une application de gestion de tâches avec rappels, étiquettes et notifications.",
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "WeatherNow",
+    title: "PokemonIOS app",
     image: "/src/assets/projects/weathernow.png",
     description:
       "Application météo moderne avec prévisions, cartes et données en temps réel.",
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     id: 5,
-    title: "E-Quiz",
+    title: "Quoridor",
     image: "/src/assets/projects/equiz.png",
     description:
       "Plateforme de quiz personnalisée pour les étudiants et enseignants.",
@@ -70,19 +70,6 @@ const projects = [
     github: "https://github.com/sefats/equiz",
     site: "",
     technologies: ["Symfony", "Bootstrap", "MySQL"],
-    collaborators: [],
-    gallery: [],
-  },
-  {
-    id: 6,
-    title: "Portfolio 2025",
-    image: "/src/assets/projects/portfolio2025.png",
-    description:
-      "Site portfolio interactif et responsive pour présenter mes compétences, projets et parcours.",
-    link: "/projets/portfolio2025",
-    github: "https://github.com/sefats/portfolio2025",
-    site: "https://sefa-tas.fr",
-    technologies: ["React", "Framer Motion", "Vite"],
     collaborators: [],
     gallery: [],
   },
