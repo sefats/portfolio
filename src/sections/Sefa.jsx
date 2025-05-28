@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import AnimatedText from "../components/AnimatedText";
 import { motion } from "framer-motion";
-import VantaBackground from "../components/VantaBackground";
+import ParticlesBackground from "../components/ParticlesBackground";
+
 
 const Sefa = () => {
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
@@ -19,7 +20,7 @@ const Sefa = () => {
       id="home"
       className="relative min-h-screen text-black flex items-center justify-center px-[5%] py-24 overflow-hidden"
     >
-      <VantaBackground />
+      <ParticlesBackground />
 
       {/* 🧑‍💻 Contenu principal */}
       <div className="relative z-10 w-full max-w-7xl flex flex-col md:flex-row items-center gap-24">
