@@ -28,7 +28,7 @@ const About = () => {
           {/* Image */}
           <div className="w-[260px] h-[260px] md:w-[300px] md:h-[300px] flex-shrink-0">
             <img
-              src="src/assets/Sefa2.jpg"
+              src="/src/assets/Sefa2.jpg"
               alt="Sefa Tas"
               className="w-full h-full object-cover rounded-xl shadow-lg"
             />
