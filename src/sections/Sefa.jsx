@@ -59,7 +59,7 @@ const Sefa = () => {
           className="flex-1 flex justify-center"
         >
           <img
-            src="src/assets/pp2.jpg"
+            src="src/assets/Sefa.png"
             alt="Sefa Tas"
             className="w-[350px] h-[350px] md:w-[420px] md:h-[420px] object-cover rounded-xl shadow-lg border-4 border-black"
           />

@@ -6,8 +6,9 @@ const roles = [
   "Développeur Full-Stack",
   "Développement d'Applications",
   "Développement Front-End",
+  "Systèmes et Réseaux",
   "Développement Back-End",
-  "Visca Barca 💙❤️ "
+  
 ];
 
 const AnimatedText = () => {
