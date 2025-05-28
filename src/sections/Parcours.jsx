@@ -40,14 +40,16 @@ const Parcours = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-[#3B80C3] border-b-4 border-[#3B80C3] inline-block pb-2">
-            {showExperiences ? "Mes expériences" : "Mon parcours"}
+            {showExperiences
+              ? "Mes expériences professionnelles"
+              : "Mon parcours"}
           </h2>
         </div>
 
         <div className="text-center mb-14">
           <button
             onClick={toggleView}
-            className="text-white bg-[#3B80C3] hover:bg-[#2f6dac] transition px-8 py-3 rounded-full text-xl flex items-center justify-center gap-3 mx-auto shadow-md"
+            className="text-white bg-[#3B80C3] hover:bg-[#2f6dac] transition px-8 py-3 rounded-full text-xl flex items-center justify-center gap-3 mx-auto shadow-md cursor-pointer"
           >
             {showExperiences ? "Voir mon parcours" : "Voir mes expériences"}
             <FaArrowRightLong className="translate-y-[1px]" />

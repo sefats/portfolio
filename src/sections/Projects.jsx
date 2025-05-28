@@ -1,41 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import projects from "../data/projects";
+import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpen = (project) => {
+    setSelectedProject(project);
+    document.body.style.overflow = "hidden"; // Bloque scroll
+  };
+
+  const handleClose = () => {
+    setSelectedProject(null);
+    document.body.style.overflow = "auto"; // Débloque scroll
+  };
+
   return (
     <section id="projects" className="bg-white py-32 px-[5%]">
       <div className="max-w-7xl mx-auto">
+        {/* Titre */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-[#3B80C3] border-b-4 border-[#3B80C3] inline-block pb-2">
             Projets
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {projects.map((project, index) => (
+        {/* Grille des projets */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-30">
+          {projects.map((project) => (
             <div
-              key={index}
-              className="border border-[#3B80C3] rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow duration-300"
+              key={project.id}
+              className="bg-white rounded-3xl shadow-md hover:shadow-lg border border-gray-200 hover:translate-y-[-4px] transition-all duration-300 ease-in-out p-5 flex flex-col"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-52 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-xl font-semibold text-[#3B80C3] mb-3">
+              {/* Image */}
+              <div className="w-full overflow-hidden rounded-xl mb-4 border">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+
+              {/* Titre */}
+              <h3 className="text-2xl font-bold text-[#3B80C3] mb-4">
                 {project.title}
               </h3>
-              <a
-                href={project.link}
-                className="text-[#f57c00] font-semibold flex items-center gap-1 hover:underline"
+
+              {/* Bouton */}
+              <button
+                onClick={() => handleOpen(project)}
+                className="mt-auto self-start text-[#f57c00] font-semibold text-base flex items-center gap-2 hover:underline hover:scale-[1.02] transition-transform cursor-pointer"
               >
                 Voir plus <FaArrowRightLong className="translate-y-[1px]" />
-              </a>
+              </button>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Modale */}
+      {selectedProject && (
+        <ProjectCard project={selectedProject} onClose={handleClose} />
+      )}
     </section>
   );
 };

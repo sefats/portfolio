@@ -41,9 +41,9 @@ const About = () => {
               Informatique à l’IUT Nord Franche-Comté. Passionné par le
               développement web et la création de logiciels, je m’épanouis dans
               des projets où je peux concevoir, coder et résoudre des problèmes
-              concrets. Mes domaines de prédilection ? Le développement
+              concrets. Ce que j'aime dans l'informatique ? Le développement
               d'applications web et logicielles, la gestion de bases de données
-              et un grand intérêt pour l’administration systèmes et réseaux. 
+              et un intérêt pour l’administration systèmes et réseaux. 
               En dehors de l’informatique, j'aime passer mon temps libre à regarder des films et des séries.
               J'aime également voyager, jouer aux jeux vidéos et le sport en général, particulièrement le football et les échecs.
 
@@ -76,9 +76,6 @@ const About = () => {
                 className="group relative hover:scale-110 transition-transform"
               >
                 <img src={linkedinLogo} alt="LinkedIn" className="w-8 h-8" />
-                <span className="absolute bottom-[-1.8rem] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                  LinkedIn
-                </span>
               </a>
 
               <a
@@ -88,9 +85,6 @@ const About = () => {
                 className="group relative hover:scale-110 transition-transform"
               >
                 <img src={githubLogo} alt="GitHub" className="w-8 h-8" />
-                <span className="absolute bottom-[-1.8rem] left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                  GitHub
-                </span>
               </a>
             </div>
           </div>
