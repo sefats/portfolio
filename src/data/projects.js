@@ -55,43 +55,62 @@ const projects = [
   },
   {
     id: 3,
-    title: "Cahier des Registre - Forvia",
-    image: "/src/assets/projects/mytasks.png",
-    description:
-      "Une application de gestion de tâches avec rappels, étiquettes et notifications.",
-    link: "/projets/mytasks",
-    github: "https://github.com/sefats/mytasks",
-    site: "",
-    technologies: ["React", "Express", "PostgreSQL"],
-    collaborators: [],
-    gallery: ["/src/assets/projects/mytasks_1.png"],
+    title: "Cahier-Registre Forvia",
+    image: "/src/assets/projets/forvia.png",
+    description: "Application interne de registre d’entrées pour Forvia, permettant de suivre les visites des employés et visiteurs tout en générant des statistiques précises.",
+    subject: "Développée lors de mon stage chez Forvia, cette application a pour but de centraliser les enregistrements des personnes entrant sur le site d’Allenjoie. En interfaçant le système avec LDAP (Active Directory), elle permet une identification rapide et fiable. Le projet visait également à produire des statistiques journalières et mensuelles pour améliorer la traçabilité et la gestion des accès.",
+    features: `Identification LDAP : Connexion sécurisée via l’annuaire interne pour les employés.
+    Enregistrement visiteurs : Interface dédiée à la saisie des entrées visiteurs avec date/heure.
+    Statistiques journalières : Suivi des entrées en temps réel, avec visualisation des pics d’affluence.
+    Statistiques mensuelles : Synthèse mensuelle des accès pour les responsables de site.
+    Interface double : Accueil différencié Visiteur / Employé pour simplifier l’expérience utilisateur.`,
+    link: "/projets/forvia",
+    github: "https://github.com/sefats/cahier-registre-forvia",
+    site: "https://cahier-registre-forvia.vercel.app/",
+    technologies: [
+      { name: "React", icon: "/src/assets/logos/React.svg" },
+      { name: "Node.js", icon: "/src/assets/logos/Node.js.svg" },
+      { name: "MySQL", icon: "/src/assets/logos/Mysql.svg" }
+    ],
   },
   {
     id: 4,
-    title: "PokemonIOS app",
+    title: "PokemonIOS",
     image: "/src/assets/projects/weathernow.png",
-    description:
-      "Application météo moderne avec prévisions, cartes et données en temps réel.",
-    link: "/projets/weathernow",
-    github: "https://github.com/sefats/weathernow",
-    site: "",
-    technologies: ["Next.js", "OpenWeatherMap API"],
-    collaborators: [],
-    gallery: [],
+    description: "Application iOS de type e-commerce dédiée à l’univers Pokémon, permettant aux utilisateurs de découvrir, ajouter et commander des cartes Pokémon via une interface fluide et moderne.",
+    subject: "Cette application a été développée avec Swift pour la partie mobile et Node.js pour l’API back-end. Elle propose une expérience utilisateur complète : navigation dans les cartes Pokémon, création de compte, connexion, gestion du panier et finalisation de commande. L’objectif était de créer une application mobile stable, visuellement attrayante et fonctionnelle, inspirée des standards de l’e-commerce moderne, tout en restant fidèle à l’univers Pokémon.",
+    features: `Navigation par collection : Parcours fluide de cartes Pokémon avec images, détails et rareté.
+              Inscription et authentification : Création de compte utilisateur et connexion sécurisée.
+              Ajout au panier : Système de panier interactif pour ajouter, retirer ou modifier les quantités.
+              Passage de commande : Simulation de commande avec récapitulatif du panier.
+              Connexion à une API Node.js : Échanges sécurisés entre l’app iOS et le serveur (produits, utilisateurs, commandes).`,
+    technologies: [
+      { name: "Swift", icon: "/src/assets/logos/Swift.svg" },
+      { name: "Node.js", icon: "/src/assets/logos/Node.js.svg" }
+    ],
+    video: "/src/assets/projets/PokemonIOS.MP4",
   },
   {
     id: 5,
     title: "Quoridor",
-    image: "/src/assets/projects/equiz.png",
-    description:
-      "Plateforme de quiz personnalisée pour les étudiants et enseignants.",
-    link: "/projets/equiz",
-    github: "https://github.com/sefats/equiz",
-    site: "",
-    technologies: ["Symfony", "Bootstrap", "MySQL"],
-    collaborators: [],
-    gallery: [],
-  },
+    image: "/src/assets/projets/quoridor.png",
+    description: "Reproduction en JavaFX du célèbre jeu de plateau Quoridor, où deux joueurs s’affrontent pour atteindre le côté opposé du plateau tout en plaçant stratégiquement des murs pour ralentir leur adversaire.",
+    subject: "Ce projet a été réalisé en groupe dans un contexte pédagogique. L’objectif était de concevoir une version numérique du jeu Quoridor en utilisant JavaFX pour l’interface graphique. Le jeu devait intégrer une logique de mouvement, de blocage par murs, une gestion du tour par tour, et une IA simple pour simuler un adversaire. Nous avons aussi soigné l’ergonomie de l’interface pour une prise en main intuitive.",
+    features: `Plateau interactif : Représentation fidèle du plateau Quoridor en grille graphique.
+              Déplacement joueur : Commandes clavier ou clics pour déplacer les pions selon les règles.
+              Placement de murs : Possibilité de poser des murs verticaux ou horizontaux pour gêner l’adversaire.
+              IA simple : Mode contre l’ordinateur avec logique de déplacement automatique.
+              Règles intégrées : Affichage des règles et des commandes à l’écran pour guider le joueur.`,
+    link: "/projets/quoridor",
+    github: "https://github.com/sefats/Quoridor_JavaFX",
+    technologies: [
+      { name: "Java", icon: "/src/assets/logos/Java.svg" },
+    ],
+    collaborators: [
+      { name: "Robin Cassard", github: "https://github.com/nexiath" },
+      { name: "Noam Joly-Girods", github: "https://github.com/Na-m0" },
+      { name: "Elmir Gerovic", github: "https://github.com/elmirge7" },
+    ],  },
 ];
 
 export default projects;

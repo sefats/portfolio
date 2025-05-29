@@ -37,7 +37,7 @@ const About = () => {
           {/* Texte & contact */}
           <div className="flex-1 text-center md:text-left">
             <p className="text-gray-800 text-xl leading-relaxed mb-8">
-              Salut ! Je m'appelle Sefa TAS, actuellement en 3e année de BUT
+              Salut ! Je m'appelle Sefa TAS, actuellement en 3e année d'un BUT
               Informatique à l’IUT Nord Franche-Comté. Passionné par le
               développement web et la création de logiciels, je m’épanouis dans
               des projets où je peux concevoir, coder et résoudre des problèmes

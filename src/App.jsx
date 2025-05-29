@@ -1,10 +1,10 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Sefa from './sections/Sefa';
 import About from './sections/About'
 import Parcours from './sections/Parcours';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Contact from './sections/Contact'
 
 
 const App = () => {
@@ -16,6 +16,7 @@ const App = () => {
       <Parcours />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 };

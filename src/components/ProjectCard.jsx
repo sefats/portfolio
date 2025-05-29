@@ -21,13 +21,17 @@ const imageAnimation = {
 const ProjectCard = ({ project, onClose }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
-  const hasGallery = Array.isArray(project.gallery) && project.gallery.length > 0;
+  const hasGallery =
+    Array.isArray(project.gallery) && project.gallery.length > 0;
 
   const handleKeyDown = useCallback(
     (e) => {
       if (selectedImageIndex !== null && hasGallery) {
         if (e.key === "Escape") setSelectedImageIndex(null);
-        if (e.key === "ArrowRight" && selectedImageIndex < project.gallery.length - 1)
+        if (
+          e.key === "ArrowRight" &&
+          selectedImageIndex < project.gallery.length - 1
+        )
           setSelectedImageIndex((prev) => prev + 1);
         if (e.key === "ArrowLeft" && selectedImageIndex > 0)
           setSelectedImageIndex((prev) => prev - 1);
@@ -68,23 +72,33 @@ const ProjectCard = ({ project, onClose }) => {
           </button>
 
           {/* Titre */}
-          <h2 className="text-4xl font-bold text-[#3B80C3] mb-6">{project.title}</h2>
+          <h2 className="text-4xl font-bold text-[#3B80C3] mb-6">
+            {project.title}
+          </h2>
 
           {/* Description */}
-          <p className="text-gray-800 text-xl leading-relaxed mb-8">{project.description}</p>
+          <p className="text-gray-800 text-xl leading-relaxed mb-8">
+            {project.description}
+          </p>
 
           {/* Sujet */}
           {project.subject && (
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-[#3B80C3] mb-3">À propos du projet</h3>
-              <p className="text-gray-800 text-lg leading-relaxed">{project.subject}</p>
+              <h3 className="text-2xl font-semibold text-[#3B80C3] mb-3">
+                À propos du projet
+              </h3>
+              <p className="text-gray-800 text-lg leading-relaxed">
+                {project.subject}
+              </p>
             </div>
           )}
 
           {/* Fonctionnalités */}
           {project.features && typeof project.features === "string" && (
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-[#3B80C3] mb-3">Fonctionnalités</h3>
+              <h3 className="text-2xl font-semibold text-[#3B80C3] mb-3">
+                Fonctionnalités
+              </h3>
               <ul className="space-y-2 text-gray-800 text-lg leading-relaxed">
                 {project.features.split("\n").map((line, idx) => {
                   const [title, ...rest] = line.split(" : ");
@@ -95,6 +109,19 @@ const ProjectCard = ({ project, onClose }) => {
                   );
                 })}
               </ul>
+            </div>
+          )}
+
+          {/* Vidéo de démonstration */}
+          {project.video && (
+            <div className="mb-8">
+              <video
+                controls
+                src={project.video}
+                className="w-full rounded-xl shadow-lg max-h-[500px] object-contain"
+              >
+                Votre navigateur ne supporte pas les vidéos HTML5.
+              </video>
             </div>
           )}
 
@@ -126,7 +153,10 @@ const ProjectCard = ({ project, onClose }) => {
                   exit={{ opacity: 0 }}
                   onClick={() => setSelectedImageIndex(null)}
                 >
-                  <div onClick={(e) => e.stopPropagation()} className="relative">
+                  <div
+                    onClick={(e) => e.stopPropagation()}
+                    className="relative"
+                  >
                     <button
                       onClick={() => setSelectedImageIndex(null)}
                       className="absolute top-[-3rem] right-[-3rem] text-white text-3xl z-[1001] cursor-pointer hover:text-red-400 transition"
@@ -178,7 +208,9 @@ const ProjectCard = ({ project, onClose }) => {
           {/* Technologies */}
           {project.technologies?.length > 0 && (
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-[#3B80C3] mb-3">Technologies utilisées</h3>
+              <h3 className="text-2xl font-semibold text-[#3B80C3] mb-3">
+                Technologies utilisées
+              </h3>
               <div className="flex flex-wrap gap-4">
                 {project.technologies.map((tech, idx) => (
                   <div
@@ -202,7 +234,7 @@ const ProjectCard = ({ project, onClose }) => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:underline"
               >
-                <FaExternalLinkAlt /> Site en ligne
+                <FaExternalLinkAlt /> Démo
               </a>
             )}
             {project.github && (
@@ -220,7 +252,9 @@ const ProjectCard = ({ project, onClose }) => {
           {/* Collaborateurs */}
           {project.collaborators?.length > 0 && (
             <div>
-              <h3 className="text-2xl font-semibold text-[#3B80C3] mb-3">Collaborateurs</h3>
+              <h3 className="text-2xl font-semibold text-[#3B80C3] mb-3">
+                Collaborateurs
+              </h3>
               <ul className="list-disc pl-6 text-lg text-gray-700 space-y-1">
                 {project.collaborators.map((collab, idx) => (
                   <li key={idx}>
