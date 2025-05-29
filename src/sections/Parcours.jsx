@@ -10,7 +10,7 @@ import sevilogLogo from "../assets/sevilog.png";
 
 // Logos technologies
 import symfonyLogo from "../assets/logos/Symfony.svg";
-import phpLogo from "../assets/logos/Php.svg";
+import phpLogo from "../assets/logos/PHP.svg";
 import mysqlLogo from "../assets/logos/MySQL.svg";
 import nodejsLogo from "../assets/logos/Node.js.svg";
 import vuejsLogo from "../assets/logos/Vue.js.svg";
