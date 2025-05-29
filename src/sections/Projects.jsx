@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import projects from "../data/projects";
-import ProjectCard from "../components/ProjectCard";
+import projects from "/src/data/projects";
+import ProjectCard from "/src/components/ProjectCard";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);

@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     title: "Balonu",
-    image: "/src/assets/projets/balonu.png",
+    image: "/balonu.png",
     description:
       "Balonu est une plateforme web dédiée à la présentation et à la gestion des manifestations de montgolfières dans la magnifique région de la Cappadoce.",
     subject:
@@ -12,9 +12,9 @@ const projects = [
     github: "https://github.com/nexiath/balonu_",
     site: "https://balonu.vercel.app/",
     technologies: [
-      { name: "React", icon: "/src/assets/logos/React.svg" },
-      { name: "Node.js", icon: "/src/assets/logos/Node.js.svg" },
-      { name: "MongoDB", icon: "/src/assets/logos/MongoDB.svg" },
+      { name: "React", icon: "React.svg" },
+      { name: "Node.js", icon: "Node.js.svg" },
+      { name: "MongoDB", icon: "MongoDB.svg" },
     ],
     collaborators: [
       { name: "Robin Cassard", github: "https://github.com/nexiath" },
@@ -26,7 +26,7 @@ const projects = [
   {
     id: 2,
     title: "Taxe-Sucre",
-    image: "/src/assets/projets/taxe-sucre.png",
+    image: "taxe-sucre.png",
     description: "Taxe-Sucre est une application web développée pour automatiser le calcul et la déclaration de la taxe sur les boissons sucrées en France. Elle est destinée aux commerçants du secteur alimentaire afin de les aider à rester conformes à la réglementation tout en gagnant du temps.",
     subject: "Ce projet a été réalisé chez Sevilog dans le cadre d’un stage en développement. L’objectif était de répondre aux besoins des clients en proposant une solution complète et intuitive permettant de gérer les produits, les déclarations fiscales et le calcul des taxes sucrées, tout en respectant les règles fiscales en vigueur. J’ai principalement travaillé sur le tableau de bord administrateur, le module de gestion des produits, la duplication d’historiques et le calcul automatisé de la taxe.",
     features: `Gestion des produits : Ajout, modification, suppression, filtrage par code-barres ou catégorie, avec variantes selon pays et année.
@@ -38,25 +38,25 @@ const projects = [
     link: "/projets/taxe-sucre",
     site: "https://taxe-sucre.com/",
     technologies: [
-      { name: "Symfony", icon: "/src/assets/logos/Symfony.svg" },
-      { name: "Bootstrap", icon: "/src/assets/logos/Bootstrap.svg" },
-      { name: "MySQL", icon: "/src/assets/logos/MySQL.svg" },
+      { name: "Symfony", icon: "Symfony.svg" },
+      { name: "Bootstrap", icon: "Bootstrap.svg" },
+      { name: "MySQL", icon: "MySQL.svg" },
     ],
     collaborators: [
       { name: "Ebubekir Guldal", github: "https://github.com/EbubekirGuldal" },
       { name: "Bilal Taze", github: "https://github.com/BilalTaze" },
     ],
     gallery: [
-      "/src/assets/projets/taxe-sucre2.png",
-      "/src/assets/projets/taxe-sucre3.png",
-      "/src/assets/projets/taxe-sucre4.png",
-      "/src/assets/projets/taxe-sucre5.png",
+      "taxe-sucre2.png",
+      "taxe-sucre3.png",
+      "taxe-sucre4.png",
+      "taxe-sucre5.png",
     ],
   },
   {
     id: 3,
     title: "Cahier-Registre Forvia",
-    image: "/src/assets/projets/forvia.png",
+    image: "forvia.png",
     description: "Application interne de registre d’entrées pour Forvia, permettant de suivre les visites des employés et visiteurs tout en générant des statistiques précises.",
     subject: "Développée lors de mon stage chez Forvia, cette application a pour but de centraliser les enregistrements des personnes entrant sur le site d’Allenjoie. En interfaçant le système avec LDAP (Active Directory), elle permet une identification rapide et fiable. Le projet visait également à produire des statistiques journalières et mensuelles pour améliorer la traçabilité et la gestion des accès.",
     features: `Identification LDAP : Connexion sécurisée via l’annuaire interne pour les employés.
@@ -68,15 +68,14 @@ const projects = [
     github: "https://github.com/sefats/cahier-registre-forvia",
     site: "https://cahier-registre-forvia.vercel.app/",
     technologies: [
-      { name: "React", icon: "/src/assets/logos/React.svg" },
-      { name: "Node.js", icon: "/src/assets/logos/Node.js.svg" },
-      { name: "MySQL", icon: "/src/assets/logos/Mysql.svg" }
+      { name: "React", icon: "React.svg" },
+      { name: "Node.js", icon: "Node.js.svg" },
+      { name: "MySQL", icon: "Mysql.svg" }
     ],
   },
   {
     id: 4,
     title: "PokemonIOS",
-    image: "/src/assets/projects/weathernow.png",
     description: "Application iOS de type e-commerce dédiée à l’univers Pokémon, permettant aux utilisateurs de découvrir, ajouter et commander des cartes Pokémon via une interface fluide et moderne.",
     subject: "Cette application a été développée avec Swift pour la partie mobile et Node.js pour l’API back-end. Elle propose une expérience utilisateur complète : navigation dans les cartes Pokémon, création de compte, connexion, gestion du panier et finalisation de commande. L’objectif était de créer une application mobile stable, visuellement attrayante et fonctionnelle, inspirée des standards de l’e-commerce moderne, tout en restant fidèle à l’univers Pokémon.",
     features: `Navigation par collection : Parcours fluide de cartes Pokémon avec images, détails et rareté.
@@ -85,15 +84,15 @@ const projects = [
               Passage de commande : Simulation de commande avec récapitulatif du panier.
               Connexion à une API Node.js : Échanges sécurisés entre l’app iOS et le serveur (produits, utilisateurs, commandes).`,
     technologies: [
-      { name: "Swift", icon: "/src/assets/logos/Swift.svg" },
-      { name: "Node.js", icon: "/src/assets/logos/Node.js.svg" }
+      { name: "Swift", icon: "Swift.svg" },
+      { name: "Node.js", icon: "Node.js.svg" }
     ],
-    video: "/src/assets/projets/PokemonIOS.MP4",
+    video: "PokemonIOS.MP4",
   },
   {
     id: 5,
     title: "Quoridor",
-    image: "/src/assets/projets/quoridor.png",
+    image: "quoridor.png",
     description: "Reproduction en JavaFX du célèbre jeu de plateau Quoridor, où deux joueurs s’affrontent pour atteindre le côté opposé du plateau tout en plaçant stratégiquement des murs pour ralentir leur adversaire.",
     subject: "Ce projet a été réalisé en groupe dans un contexte pédagogique. L’objectif était de concevoir une version numérique du jeu Quoridor en utilisant JavaFX pour l’interface graphique. Le jeu devait intégrer une logique de mouvement, de blocage par murs, une gestion du tour par tour, et une IA simple pour simuler un adversaire. Nous avons aussi soigné l’ergonomie de l’interface pour une prise en main intuitive.",
     features: `Plateau interactif : Représentation fidèle du plateau Quoridor en grille graphique.
@@ -104,7 +103,7 @@ const projects = [
     link: "/projets/quoridor",
     github: "https://github.com/sefats/Quoridor_JavaFX",
     technologies: [
-      { name: "Java", icon: "/src/assets/logos/Java.svg" },
+      { name: "Java", icon: "Java.svg" },
     ],
     collaborators: [
       { name: "Robin Cassard", github: "https://github.com/nexiath" },

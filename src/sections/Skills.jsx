@@ -1,34 +1,34 @@
 import React from "react";
 
 // Import manuel des logos depuis src/assets/logos/
-import Java from "../assets/logos/Java.svg";
-import Python from "../assets/logos/Python.svg";
-import C from "../assets/logos/C.svg";
-import Html from "../assets/logos/HTML5.svg";
-import Css from "../assets/logos/CSS3.svg";
-import Javascript from "../assets/logos/JavaScript.svg";
-import Php from "../assets/logos/PHP.svg";
-import Kotlin from "../assets/logos/Kotlin.svg";
-import Swift from "../assets/logos/Swift.svg";
+import Java from "/src/assets/logos/Java.svg";
+import Python from "/src/assets/logos/Python.svg";
+import C from "/src/assets/logos/C.svg";
+import Html from "/src/assets/logos/HTML5.svg";
+import Css from "/src/assets/logos/CSS3.svg";
+import Javascript from "/src/assets/logos/JavaScript.svg";
+import Php from "/src/assets/logos/PHP.svg";
+import Kotlin from "/src/assets/logos/Kotlin.svg";
+import Swift from "/src/assets/logos/Swift.svg";
 
-import Vue from "../assets/logos/Vue.js.svg";
-import ReactLogo from "../assets/logos/React.svg";
-import Vitejs from "../assets/logos/Vite.js.svg";
-import Symfony from "../assets/logos/Symfony.svg";
-import Nodejs from "../assets/logos/Node.js.svg";
-import Spring from "../assets/logos/Spring.svg";
+import Vue from "/src/assets/logos/Vue.js.svg";
+import ReactLogo from "/src/assets/logos/React.svg";
+import Vitejs from "/src/assets/logos/Vite.js.svg";
+import Symfony from "/src/assets/logos/Symfony.svg";
+import Nodejs from "/src/assets/logos/Node.js.svg";
+import Spring from "/src/assets/logos/Spring.svg";
 
-import Postgresql from "../assets/logos/PostgresSQL.svg";
-import Mysql from "../assets/logos/MySQL.svg";
-import Mongodb from "../assets/logos/MongoDB.svg";
+import Postgresql from "/src/assets/logos/PostgresSQL.svg";
+import Mysql from "/src/assets/logos/MySQL.svg";
+import Mongodb from "/src/assets/logos/MongoDB.svg";
 
-import Linux from "../assets/logos/Linux.svg";
-import Windows from "../assets/logos/Windows.svg";
-import Github from "../assets/logos/GitHub.svg";
-import Docker from "../assets/logos/Docker.svg";
-import Figma from "../assets/logos/Figma.svg";
-import Canva from "../assets/logos/Canva.svg";
-import Trello from "../assets/logos/Trello.svg";
+import Linux from "/src/assets/logos/Linux.svg";
+import Windows from "/src/assets/logos/Windows.svg";
+import Github from "/src/assets/logos/GitHub.svg";
+import Docker from "/src/assets/logos/Docker.svg";
+import Figma from "/src/assets/logos/Figma.svg";
+import Canva from "/src/assets/logos/Canva.svg";
+import Trello from "/src/assets/logos/Trello.svg";
 
 const skills = {
   "Langages de programmation": [

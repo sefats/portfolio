@@ -5,15 +5,15 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
 // Logos entreprises
-import forviaLogo from "../assets/images/FORVIA.svg.png";
-import sevilogLogo from "../assets/images/sevilog.png";
+import forviaLogo from "/src/assets/images/FORVIA.svg.png";
+import sevilogLogo from "/src/assets/images/sevilog.png";
 
 // Logos technologies
-import symfonyLogo from "../assets/logos/Symfony.svg";
-import phpLogo from "../assets/logos/PHP.svg";
-import mysqlLogo from "../assets/logos/MySQL.svg";
-import nodejsLogo from "../assets/logos/Node.js.svg";
-import vuejsLogo from "../assets/logos/Vue.js.svg";
+import symfonyLogo from "/src/assets/logos/Symfony.svg";
+import phpLogo from "/src/assets/logos/PHP.svg";
+import mysqlLogo from "/src/assets/logos/MySQL.svg";
+import nodejsLogo from "/src/assets/logos/Node.js.svg";
+import vuejsLogo from "/src/assets/logos/Vue.js.svg";
 
 const Parcours = () => {
   const [showExperiences, setShowExperiences] = useState(false);
