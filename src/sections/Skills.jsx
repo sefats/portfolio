@@ -19,12 +19,12 @@ import Nodejs from "../assets/logos/Node.js.svg";
 import Spring from "../assets/logos/Spring.svg";
 
 import Postgresql from "../assets/logos/PostgresSQL.svg";
-import Mysql from "../assets/logos/Mysql.svg";
-import Mongodb from "../assets/logos/Mongodb.svg";
+import Mysql from "../assets/logos/MySQL.svg";
+import Mongodb from "../assets/logos/MongoDB.svg";
 
 import Linux from "../assets/logos/Linux.svg";
 import Windows from "../assets/logos/Windows.svg";
-import Github from "../assets/logos/Github.svg";
+import Github from "../assets/logos/GitHub.svg";
 import Docker from "../assets/logos/Docker.svg";
 import Figma from "../assets/logos/Figma.svg";
 import Canva from "../assets/logos/Canva.svg";
