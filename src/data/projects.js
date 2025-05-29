@@ -68,9 +68,9 @@ const projects = [
     github: "https://github.com/sefats/cahier-registre-forvia",
     site: "https://cahier-registre-forvia.vercel.app/",
     technologies: [
-      { name: "React", icon: "React.svg" },
+      { name: "React", icon: "react.svg" },
       { name: "Node.js", icon: "Node.js.svg" },
-      { name: "MySQL", icon: "Mysql.svg" }
+      { name: "MySQL", icon: "MySQL.svg" }
     ],
   },
   {
