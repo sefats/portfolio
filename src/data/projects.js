@@ -12,7 +12,7 @@ const projects = [
     github: "https://github.com/nexiath/balonu_",
     site: "https://balonu.vercel.app/",
     technologies: [
-      { name: "React", icon: "React.svg" },
+      { name: "React", icon: "react.svg" },
       { name: "Node.js", icon: "Node.js.svg" },
       { name: "MongoDB", icon: "MongoDB.svg" },
     ],
