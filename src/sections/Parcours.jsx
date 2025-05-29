@@ -5,8 +5,8 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
 // Logos entreprises
-import forviaLogo from "../assets/FORVIA.svg.png";
-import sevilogLogo from "../assets/sevilog.png";
+import forviaLogo from "../assets/images/FORVIA.svg.png";
+import sevilogLogo from "../assets/images/sevilog.png";
 
 // Logos technologies
 import symfonyLogo from "../assets/logos/Symfony.svg";

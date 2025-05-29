@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import githubLogo from "../assets/logos/GitHub.svg"; // Ton logo GitHub
+import githubLogo from "../assets/logos/GitHub.svg";
 import linkedinLogo from "../assets/logos/LinkedIn.svg";
 
 const About = () => {
@@ -28,7 +28,7 @@ const About = () => {
           {/* Image */}
           <div className="w-[260px] h-[260px] md:w-[300px] md:h-[300px] flex-shrink-0">
             <img
-              src="/src/assets/Sefa2.jpg"
+              src="/src/assets/images/Sefa2.jpg"
               alt="Sefa Tas"
               className="w-full h-full object-cover rounded-xl shadow-lg"
             />

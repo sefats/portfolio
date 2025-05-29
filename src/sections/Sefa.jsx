@@ -36,7 +36,7 @@ const Sefa = () => {
           </h2>
           <div className="flex flex-wrap justify-center md:justify-start gap-6">
             <a
-              href="/src/assets/TAS_Sefa_CV.pdf"
+              href="/src/assets/images/TAS_Sefa_CV.pdf"
               className="bg-black text-white font-semibold text-lg px-8 py-3 rounded-full hover:bg-gray-800 transition"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const Sefa = () => {
           className="flex-1 flex justify-center"
         >
           <img
-            src="/src/assets/Sefa.png"
+            src="/src/assets/images/Sefa.png"
             alt="Sefa Tas"
             className="w-[350px] h-[350px] md:w-[420px] md:h-[420px] object-cover rounded-xl shadow-lg border-4 border-black"
           />
