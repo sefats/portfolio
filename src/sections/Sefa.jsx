@@ -36,7 +36,7 @@ const Sefa = () => {
           </h2>
           <div className="flex flex-wrap justify-center md:justify-start gap-6">
             <a
-              src="/TAS_Sefa_CV.pdf"
+              href="TAS_Sefa_CV.pdf"
               className="bg-black text-white font-semibold text-lg px-8 py-3 rounded-full hover:bg-gray-800 transition"
               target="_blank"
               rel="noopener noreferrer"
