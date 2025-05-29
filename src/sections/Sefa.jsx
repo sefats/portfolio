@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AnimatedText from "/src/components/AnimatedText";
 import { motion } from "framer-motion";
-import ParticlesBackground from "/src/components/ParticlesBackground";
+import ParticlesBackground from "../components/ParticlesBackground";
 
 
 const Sefa = () => {

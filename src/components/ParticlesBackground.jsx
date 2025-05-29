@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import particlesConfig from "/src/data/particlesjs-config.json";
+import particlesConfig from "../data/particlesjs-config.json";
 
 const ParticlesBackground = () => {
   useEffect(() => {
