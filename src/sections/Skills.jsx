@@ -7,7 +7,7 @@ import C from "../assets/logos/C.svg";
 import Html from "../assets/logos/HTML5.svg";
 import Css from "../assets/logos/CSS3.svg";
 import Javascript from "../assets/logos/JavaScript.svg";
-import Php from "../assets/logos/Php.svg";
+import Php from "../assets/logos/PHP.svg";
 import Kotlin from "../assets/logos/Kotlin.svg";
 import Swift from "../assets/logos/Swift.svg";
 
