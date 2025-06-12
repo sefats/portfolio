@@ -29,7 +29,7 @@ const Navbar = () => {
     { id: "parcours", label: "Parcours" },
     { id: "skills", label: "Compétences" },
     { id: "projects", label: "Projets" },
-    { id: "portfolio", label: "Portoflio" },
+    { id: "portfolio", label: "Portfolio" },
     { id: "contact", label: "Contact" },
   ];
 
